@@ -1,6 +1,583 @@
 //
 // For guidance on how to add CSS and SCSS see:
 // https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
-// 
+//
 
 // Add extra styles here
+
+html, body {
+  scroll-padding-top: 6rem;
+  background: f9f8f5;
+}
+
+#list-index li {
+  margin-bottom: 15px;
+}
+
+#list-index strong {
+  font-size: 16px;
+}
+
+#service-navigation { 
+  background: #eeeeee; 
+  border-bottom: 2px solid #323232;
+}
+
+#navigation a {
+  color: #323232;
+}
+
+#active-nav {
+  border-bottom-color: #323232;
+}
+
+#report-card {
+  text-align: left; 
+  padding: 20px 20px 15px 20px; 
+  background-color: #ffffff; 
+  border: 2px solid #243746;
+}
+
+.card-actions {
+  text-align: left; 
+  padding: 20px 20px 20px 20px; 
+  background-color: #eeeeee; 
+  border-top: 0px solid #243746;
+  border-left: 2px solid #243746;
+  border-right: 2px solid #243746;
+  border-bottom: 2px solid #243746;
+  margin-bottom: 30px;
+}
+
+#report-card h2 { 
+  margin-bottom: 10px; 
+}
+
+#report-card hr { 
+  border-bottom: 2px solid #323232; 
+  margin: 15px 0 15px 0;
+}
+
+#report-card p {
+  color: #323232; 
+  margin-bottom: 0px;
+}
+
+.card-actions a {
+  color: inherit; 
+}
+
+.card-actions a:visited {
+  color: inherit; 
+}
+
+#action-divider {
+  margin: 0px 20px 0px 20px; 
+  border-left: 2px solid #323232;
+}
+
+.copy {
+  background: inherit;   
+  border: 0px solid #323232; 
+  padding: 0px;
+  color: inherit; 
+  font-size: 19px; 
+}
+
+.font-red {
+  color: #aa1111;
+}
+
+.font-green {
+  color: #019e1e;
+}
+
+.font-grey {
+  color: #b5b5b5;
+}
+
+#complexity-summary::before {
+  color: #0b0c0c;
+}
+
+// Buttons
+
+#search-button {
+  background: #323232; 
+  color: #fff; 
+  font-weight: 700; 
+  padding: 8px 10px 9px 10px; 
+  box-shadow: none;
+  margin-left: 5px;
+}
+
+#start-button-gov-wales {
+  background: #019e1e;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  padding: 15px 20px 15px 20px; 
+  margin: 0 0 15px;
+}
+
+#continue-button-gov-wales {
+  background: #0360a6;
+  border: 1px 1px solid #0360a6; 
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+#secondary-button-gov-wales {
+  background: #fff;
+  border: 2px solid #0360a6; 
+  color: #0360a6;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+#small-button-gov-wales {
+  background: #fff;
+  border: 1px solid #0360a6; 
+  color: #0360a6;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 0px transparent;
+}
+
+#danger-button-gov-wales {
+  background: #fff;
+  border: 2px solid #aa1111; 
+  color: #aa1111;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 0 #7e0a0e;
+}
+
+#copy-button-gov-wales {
+  background: #fff;
+  border: 2px solid #0360a6; 
+  color: #0360a6;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+#search-button {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 2px 0 #1f1f1f;
+}
+
+.light-button {
+    background: transparent;
+    color: #0b0c0c;
+    box-shadow: 0 3px 0 #0b0c0c;
+    border: 1px #0b0c0c solid;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 0; 
+    margin-right: 5px;
+}
+
+.light-button:hover {
+  background: #b1b4b6;
+}
+
+#phone-mask {
+  display: block; 
+  float: right; 
+  background: #000; 
+  color: #fff; 
+  font-weight: 700; 
+  padding: 8px 10px 9px 10px; box-shadow: 0px 0px transparent; margin-left: 15px;
+}
+
+#back-link-gov-wales {
+  color: #0360a6; 
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#back-link-gov-wales::before {
+  border-color: #0360a6;
+  border-width: 2px 2px 0 0;
+}
+
+#back-button-gov-wales {
+  background: #0360a6;
+  border: 1px 1px solid #0360a6; color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+#sign-out-button-gov-wales {
+ border: 1px #0360a6 solid;
+ font-size: 16px;
+ font-weight: bold;
+ color: #0360a6;
+ background: #fff;
+ margin-bottom: 10px;
+}
+
+#side-nav-gov-wales a, a:visited, a:hover, a:active {
+  color: #0360a6;
+}
+
+#summary-card {
+  background: #fff; 
+  border: 2px solid #666666;
+}
+
+#summary-card-wrapper {
+  background: #dddddd; 
+  border-bottom: 2px solid #666666;
+}
+
+#summary-card-footer {
+  background: #dddddd; 
+  border-top: 2px solid #666666;
+}
+
+#summary-card__action a, a:visited, a:hover, a:active {
+  color: #0360a6; 
+  text-decoration: none;
+}
+
+#json-value {
+  font-weight: 700;
+}
+
+.govuk-date-input__item--with-separator {
+  position: relative;
+  margin-right: govuk-spacing(7);
+
+  &:after {
+    @include govuk-font($size: 27);
+
+    content: '/';
+    position: absolute;
+    top: 71%;
+    right: -1.5rem;
+    transform: translate(0, -50%);
+  }
+}
+
+.govuk-radios__label::before {
+  background: #fff;
+}
+
+.govuk-checkboxes__label::before {
+  background: #fff;
+}
+
+#warning-call-out-gov-wales {
+  background: #ffe4e5; 
+  border-left: 10px solid #aa1111; 
+  display: block;
+  font-size: 18px;  
+  font-weight: bold;
+  padding: 0px 30px 0px 25px;
+}
+
+#call-out-gov-wales {
+  background: #e5e5e5; 
+  border-left: 10px solid #0360a6; 
+  display: block;
+  font-size: 18px;  
+  font-weight: bold;
+  padding: 25px 30px;
+}
+
+#call-out-table-gov-wales {
+  background: #eeeeee; 
+  border-left: 0px solid #0360a6; 
+  display: block;
+  font-size: 18px;  
+  font-weight: bold;
+  padding: 25px 30px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+}
+
+#call-out-table-gov-wales tr {
+  margin-bottom: 20px;
+}
+
+#call-out-gov-wales {
+  background: #eeeeee; 
+  border-left: 10px solid #0360a6; 
+  display: block;
+  font-size: 18px;  
+  font-weight: bold;
+  padding: 25px 30px;
+}
+
+.info-circle-icon {
+  float: inline-start; 
+  border-radius: 50%; 
+  height: 25px;
+  width: 25px;
+  background-color: #0360a6; 
+  content: "Reference";
+  text-align: center; 
+  color: #eeeeee; 
+  font-weight: 700;
+}
+
+.info-circle-icon::before {
+  content: "i";
+}
+
+#triangle {
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 12.5px 25px 12.5px;
+   border-color: transparent transparent #aa1111 transparent;
+   transform: rotate(0deg);
+   align-text: centre;
+}
+
+#table-cell {
+  font-weight: 400;
+}
+
+#confirmation-gov-wales {
+  background: #cdf7d4; 
+  border-left: 10px solid #019e1e; 
+  display: block;
+  font-size: 18px;  
+  font-weight: bold;
+  padding: 25px 30px;
+}
+
+#form-background-gov-wales {
+  background: #f1f1f1;
+  padding: 40px 40px 20px 40px
+}
+
+#danger-background-gov-wales {
+  background: #ffe4e5;
+  border: 2px solid #aa1111;
+  padding: 40px 40px 20px 40px
+}
+
+input[type='radio']:after {
+    background-color: #fffff;
+}
+
+.autocomplete__input {
+  background-color: white;
+}
+
+.language-switch-button {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 700;
+  padding: 10px 10px 10px 10px;
+  background: #000;
+  text-decoration: none;
+  float: right;
+  margin-top: 17px;
+}
+
+.language-switch-button-public {
+  color: black;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 700;
+  padding: 10px 10px 10px 10px;
+  background: #fff;
+  text-decoration: none;
+  float: right;
+  margin-top: 14px;
+}
+
+.language-switch-button-public a {
+  color: #000;
+}
+
+#last-change {
+  text-align: left; 
+  padding: 15px 15px 15px 15px; 
+  background-color: #dddddd; 
+  border-left: 10px solid #0360a6;
+}
+
+#last-change p {
+  margin-bottom: 0; 
+  color: #1f1f1f; 
+  font-size: 16px;
+}
+
+.TaxParentRow {
+  background-color: #dddddd;
+}
+
+.TaxParentRow th {
+  border-left: 5px solid #0360a6;
+  padding-left: 20px;
+  font-weight: bold !important;
+  color: #1f1f1f !important;
+}
+
+.TaxParentRow button {
+  color: #1f1f1f;
+  text-decoration-color: #1f1f1f;
+}
+
+#TaxDetails {
+  border-left: 5px solid #0360a6;
+}
+
+.PenaltyParentRow {
+  background-color: #dddddd;
+}
+
+.PenaltyParentRow th {
+  border-left: 5px solid #fea8a9;
+  padding-left: 20px;
+  font-weight: bold !important;
+  color: #1f1f1f !important; 
+}
+
+.PenaltyParentRow button {
+  color: #1f1f1f;
+  text-decoration-color: #1f1f1f;
+}
+
+.reveal-penalty-button {
+  font-size: 19px;
+  color: #1d70b8;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 0px;
+  border: 0px solid black;
+}
+
+#PenaltyDetails {
+  border-left: 5px solid #fea8a9;
+  outline-offset: 5px;
+}
+
+.PaidParentRow {
+  background-color: #dddddd;
+}
+
+.PaidParentRow th {
+  border-left: 5px solid #019e1e;
+  padding-left: 20px;
+  font-weight: bold !important;
+  color: #1f1f1f !important;
+}
+
+.PaidParentRow button {
+  color: #1f1f1f;
+  text-decoration-color: #1f1f1f;
+}
+
+.reveal-paid-button {
+  font-size: 19px;
+  color: #1d70b8;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 0px;
+  border: 0px solid black;
+}
+
+#PaidDetails {
+  border-left: 5px solid #019e1e;
+}
+
+#PenaltyDetails, #TaxDetails, #PaidDetails { 
+  background: #eeeeee;
+}
+
+#toggle-reveal {
+  font-size: 19px;
+  color: #1d70b8;
+  text-decoration: underline;
+  background-color: #fff;
+  background-color: transparent;
+  padding: 0px;
+  border: 0px solid black;
+}
+
+
+.hods-timeline {
+  overflow: hidden;
+  position: relative;
+
+  &__item {
+    @include govuk-responsive-padding(2, "bottom");
+    padding-left: 22px;
+    position: relative;
+
+    &:before { /* styling for lines in margin */
+      background-color: govuk-colour("blue");
+      content: "";
+      padding-top: 0.3em;
+      @include govuk-responsive-padding(3, "right");
+      left: 0;
+      position: absolute;
+      margin-top: 0.55em;
+      z-index: 1;
+    }
+  }
+
+  &:before { /* styling for lines in margin */
+    background-color: govuk-colour("blue");
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    margin-top: 0.55em;
+    padding-left: 0.3em;
+    z-index: 1;
+  }
+
+  &__title {
+    @include govuk-font(19, 'bold');
+    display: inline;
+  }
+
+  &__by {
+    @include govuk-font(16);
+    color: govuk-colour('dark-grey');
+    display: inline;
+  }
+
+  &__date {
+    @include govuk-font(16);
+    color: govuk-colour('dark-grey');
+    @include govuk-responsive-margin(0, "top");
+  }
+
+  &__description {
+    @include govuk-font(16);
+    @include govuk-responsive-margin(5, "top");
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+#writing-image {
+  width: 100%; 
+  border: 2px solid #b1b4b6; 
+  margin-bottom: 25px;
+}
