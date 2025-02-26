@@ -7,8 +7,22 @@
 
 html, body {
   scroll-padding-top: 6rem;
-  background: f9f8f5;
 }
+
+  #freeze-button {
+  animation: mymove 0.5s infinite;
+  animation-direction: alternate;
+  }
+
+
+  @keyframes mymove {
+    0% {
+      background-color: #ff8d6b;
+    }
+    100% {
+      background-color: #ffa489;
+    }
+  }
 
 #list-index li {
   margin-bottom: 15px;
@@ -54,8 +68,9 @@ html, body {
 }
 
 #report-card hr { 
-  border-bottom: 2px solid #323232; 
+  border-bottom: 2px solid #243746; 
   margin: 15px 0 15px 0;
+  color: #243746;
 }
 
 #report-card p {
@@ -68,6 +83,10 @@ html, body {
 }
 
 .card-actions a:visited {
+  color: inherit; 
+}
+
+.card-actions a:hover {
   color: inherit; 
 }
 
