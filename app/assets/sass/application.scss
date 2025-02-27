@@ -5,21 +5,76 @@
 
 // Add extra styles here
 
+.circle{
+    border: 3px solid #000;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #000;
+    float: right;
+}
+.circle:hover{
+    background: #6363634f;
+}
+.circle:active{
+    background: radial-gradient(#aaa, #fff);
+}
+.circle:before,
+.circle:after{
+    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+}
+/* PLUS */
+.circle.plus:before,
+.circle.plus:after {
+    background:white;
+    }
+.circle.plus:before{
+    width: 2px;
+    margin: 3px auto;
+}
+.circle.plus:after{
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: none;
+}
+
 html, body {
   scroll-padding-top: 6rem;
 }
 
   #wallet-card {
-    background: #FFA491; 
     margin-top: 10px; 
     border-radius: 15px; 
     border-width: 0px; 
     aspect-ratio: 85 / 54;
-    animation: mymove 0.5s infinite;
-    animation-direction: alternate;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
     color: #243746;
+    border: 2px solid #243746;
   }
+
+#wallet-card {
+  background: linear-gradient(225deg,#fcd672,#ff8d6b,#ffa489,#ff5c35,);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
   #freeze-button {
   animation: mymove 0.5s infinite;
