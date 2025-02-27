@@ -9,6 +9,18 @@ html, body {
   scroll-padding-top: 6rem;
 }
 
+  #wallet-card {
+    background: #FFA491; 
+    margin-top: 10px; 
+    border-radius: 15px; 
+    border-width: 0px; 
+    aspect-ratio: 85 / 54;
+    animation: mymove 0.5s infinite;
+    animation-direction: alternate;
+    padding: 10px 10px 10px 10px;
+    color: #243746;
+  }
+
   #freeze-button {
   animation: mymove 0.5s infinite;
   animation-direction: alternate;
@@ -103,23 +115,39 @@ html, body {
   font-size: 19px; 
 }
 
-.font-red {
-  color: #aa1111;
-}
-
-.font-green {
-  color: #019e1e;
-}
-
-.font-grey {
-  color: #b5b5b5;
-}
-
 #complexity-summary::before {
   color: #0b0c0c;
 }
 
-// Buttons
+// GOV.UK re-styled component
+
+.govuk-button {
+  background: #243746;
+  border: 1px 1px solid #0360a6; 
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+.govuk-button:hover {
+  background: #243746;
+  border: 1px 1px solid #0360a6; 
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 20px;
+}
+
+.govuk-link {
+  color: inherit;
+}
+
+#sidebar a {
+  color: inherit;
+}
+
+
 
 #search-button {
   background: #323232; 
@@ -140,7 +168,7 @@ html, body {
 }
 
 #continue-button-gov-wales {
-  background: #0360a6;
+  background: #243746;
   border: 1px 1px solid #0360a6; 
   color: #fff;
   font-weight: 700;
@@ -379,7 +407,8 @@ html, body {
 
 #form-background-gov-wales {
   background: #f1f1f1;
-  padding: 40px 40px 20px 40px
+  padding: 40px 40px 20px 40px;
+  border: 2px solid #243746;
 }
 
 #danger-background-gov-wales {
