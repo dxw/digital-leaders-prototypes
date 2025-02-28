@@ -1,0 +1,39 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/unbranded.njk" %}
+
+{% set htmlLang = currentLanguage %}
+
+{% block header %}
+  <header class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #243746; border-bottom: 0px solid white;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 10px solid transparent;">
+          <span class="govuk-header__logotype" style="padding-top: 20px; padding-bottom: 20px;">
+
+          		AI PLATFORM
+
+          </span>
+    </div>
+  </header>
+  <header class="govuk-header" role="banner" data-module="govuk-header" style="background-color: #a7a4df; border-bottom: 2px solid #243746;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px solid blue;">
+      <div class="govuk-phase-banner" style="padding-top: 3px; padding-bottom: 3px; border-bottom: 0px solid grey;">
+        	<div style="width: 50%;">
+        		<h2 class="govuk-heading-l" style="color: #243746;">
+          			Issue and check digital credentials
+        		</h2>
+
+            <div class="govuk-button-group">
+              <button type="submit" class="govuk-button" data-module="govuk-button" id="continue-button-gov-wales" style="background: transparent; color: #243746; border: 2px solid #243746;">
+                Create an account
+              </button>
+              <a class="govuk-link" style="color: #243746;" href="./sign-in">Sign in</a>
+            </div>
+
+        	</div>
+      </div>
+    </div>
+  </header>
+{% endblock %}
