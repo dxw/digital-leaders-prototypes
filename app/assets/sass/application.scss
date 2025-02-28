@@ -5,56 +5,19 @@
 
 // Add extra styles here
 
-.circle{
-    border: 3px solid #000;
-    width: 22px;
-    height: 22px;
-    border-radius: 100%;
-    position: relative;
-    margin: 4px;
-    display: inline-block;
-    vertical-align: middle;
-    background: #000;
-    float: right;
-}
-.circle:hover{
-    background: #6363634f;
-}
-.circle:active{
-    background: radial-gradient(#aaa, #fff);
-}
-.circle:before,
-.circle:after{
-    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
-}
-/* PLUS */
-.circle.plus:before,
-.circle.plus:after {
-    background:white;
-    }
-.circle.plus:before{
-    width: 2px;
-    margin: 3px auto;
-}
-.circle.plus:after{
-    margin: auto 3px;
-    height: 2px;
-    box-shadow: none;
-}
-
 html, body {
   scroll-padding-top: 6rem;
 }
 
-  #wallet-card {
-    margin-top: 10px; 
-    border-radius: 15px; 
-    border-width: 0px; 
-    aspect-ratio: 85 / 54;
-    padding: 15px 15px 15px 15px;
-    color: #243746;
-    border: 2px solid #243746;
-  }
+#wallet-card {
+  margin-top: 10px; 
+  border-radius: 15px; 
+  border-width: 0px; 
+  aspect-ratio: 85 / 54;
+  padding: 15px 15px 15px 15px;
+  color: #243746;
+  border: 2px solid #243746;
+}
 
 #wallet-card {
   background: linear-gradient(225deg,#fcd672,#ff8d6b,#ffa489,#ff5c35,);
@@ -74,7 +37,54 @@ html, body {
   }
 }
 
+#ai-button { 
+  background: linear-gradient(-45deg, #ffb1b9, #ffa489, #fcd672, #80c7bc, #73c3d5, #a7a4df);
+  background-size: 400% 400%;
+  animation: ai-button 5s ease infinite;
+  height: 100vh;
+  height: 60px;
+}
 
+   
+@keyframes ai-button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+#ai-highlighted {
+  text-decoration: underline #7473c0; 
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 3px;
+}
+
+#ai-summary { 
+  background: linear-gradient(-45deg, #ffb1b9, #ffa489, #fcd672, #80c7bc, #73c3d5, #a7a4df);
+  background-size: 400% 400%;
+  animation: ai-summary 5s ease infinite;
+  height: 100vh;
+  height: 60px;
+}
+
+   
+@keyframes ai-summary {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
   #freeze-button {
   animation: mymove 0.5s infinite;
@@ -178,7 +188,6 @@ html, body {
 
 .govuk-button {
   background: #243746;
-  border: 1px 1px solid #0360a6; 
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -187,22 +196,29 @@ html, body {
 
 .govuk-button:hover {
   background: #243746;
-  border: 1px 1px solid #0360a6; 
   color: #fff;
   font-weight: 700;
   font-size: 20px;
   padding: 15px 20px;
 }
 
+.govuk-summary-card {
+  
+}
+
 .govuk-link {
   color: inherit;
+}
+
+.govuk-summary-card {
+  border: 2px solid #243746;
 }
 
 #sidebar a {
   color: inherit;
 }
 
-
+// GOV.WALES styles
 
 #search-button {
   background: #323232; 
@@ -614,6 +630,43 @@ input[type='radio']:after {
   border: 0px solid black;
 }
 
+
+.circle{
+    border: 3px solid #000;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    position: relative;
+    margin: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #000;
+    float: right;
+}
+.circle:hover{
+    background: #6363634f;
+}
+.circle:active{
+    background: radial-gradient(#aaa, #fff);
+}
+.circle:before,
+.circle:after{
+    content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+}
+/* PLUS */
+.circle.plus:before,
+.circle.plus:after {
+    background:white;
+    }
+.circle.plus:before{
+    width: 2px;
+    margin: 3px auto;
+}
+.circle.plus:after{
+    margin: auto 3px;
+    height: 2px;
+    box-shadow: none;
+}
 
 .hods-timeline {
   overflow: hidden;
