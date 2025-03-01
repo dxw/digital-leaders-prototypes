@@ -1,0 +1,21 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/unbranded.njk" %}
+
+{% set htmlLang = currentLanguage %}
+
+{% block header %}
+  <header class="govuk-header" role="banner" data-module="govuk-header" style="background-color: #80C7D6; border-bottom: 2px solid #243746;">
+    <div class="govuk-header__container govuk-width-container" style="border-bottom: 0px solid blue;">
+      <div class="govuk-phase-banner" style="padding-top: 10px; padding-bottom: 22px; border-bottom: 0px solid grey;">
+        <p style="margin-bottom: 5px; font-weight: 700;">
+          Government account
+        </p>
+      </div>
+    </div>
+  </header>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "layouts/email.html" %}
+{% set pageName="Payments prototypes" %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+          
+          <p>
+               From: <span class="govuk-!-font-weight-bold">Chidlcare Funding Agency</span><br>
+               Subject: <span class="govuk-!-font-weight-bold">Subsidised childcare</span>
+          </p>
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="margin-bottom: 25px; margin-top: 25px; border-bottom: 2px solid #243746;">
+
+          <p>Dear Nadiya Kanaa</p>
+
+          <p>You are eligible for subsidised childcare. This is based on information from Arnsford District Council when their birth was registered.</p>
+
+          <p>Show this code to your childcare provider to get 15 free hours a week:</p>
+
+          <p class="govuk-!-font-size-36">
+               <span class="govuk-!-font-weight-bold">
+                    2873 9353 0783
+               </span>
+          </p>
+
+          <p class="govuk-body">View details about information shared with Childcare Funding Agency:</p>
+
+          <p><a href="./enter-email" style="color: inherit;">account.gov.uk/history</a></p>
+
+    </div>
+  </div>
+
+
+{% endblock %}

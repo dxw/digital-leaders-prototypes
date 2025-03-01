@@ -1,0 +1,43 @@
+{% extends "layouts/register-birth.html" %}
+
+{% block pageTitle %}
+  GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+
+      <div class="govuk-form-group" id="form-background-gov-wales">
+
+
+      <h1 class="govuk-heading-l">Share information for subsidised childcare</h1>
+
+        <p class="govuk-body">To automatically apply for free school transport, you need to agree to share your birth register information with <span class="govuk-!-font-weight-bold">Chidlcare Funding Agency</span>.</p>
+
+        <p>Arnsford District Council will use your:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Child's name</li>
+          <li>Child's date of birth</li>
+          <li>Parents names</li>
+          <li>Parents address</li>
+          <li>Email addresses</li>
+          <li>Phone numberes</li>
+        </ul>
+
+        <form action="./confirmation-page-application-sent" method="post" novalidate>
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button">
+              Apply and finish
+            </button>
+          </div>
+        </form>
+
+    </div>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "layouts/plain.html" %}
+
+{% block pageTitle %}
+  GOV.UK
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group" id="form-background-gov-wales" style="padding: 15px; margin-top: 0px;">
+
+
+        <form class="form" action="./enter-password" method="post">
+
+          {{ govukInput({
+            label: {
+              text: "Enter your email",
+              classes: "govuk-label--l",
+              isPageHeading: true
+            },
+            id: "consent-email",
+            name: "consent-email"
+          }) }}
+
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 0px;">
+              Continue
+            </button>
+          </div>
+
+        </form>
+
+      </div>  
+
+    </div>
+  </div>
+
+{% endblock %}

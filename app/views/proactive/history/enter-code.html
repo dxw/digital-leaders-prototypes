@@ -1,0 +1,45 @@
+{% extends "layouts/plain.html" %}
+
+{% block pageTitle %}
+  GOV.UK Life Events
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div class="govuk-form-group" id="form-background-gov-wales" style="padding: 15px; margin-top: 0px;">      
+
+        <h1 class="govuk-heading-l">
+          Check your phone
+        </h1>
+
+        <form class="form" action="./account-history" method="post">
+
+          <p class="govuk-body">We have sent a code to the phone number linked to your government account.</p>
+
+          {{ govukInput({
+            label: {
+              text: "Enter the 6 digit security code"
+            },
+            classes: "govuk-input--width-10",
+            id: "width-10",
+            name: "width-10"
+          }) }}
+
+          <div class="govuk-button-group">
+            <button class="govuk-button" data-module="govuk-button" style="margin-bottom: 0px;">
+              Continue
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
