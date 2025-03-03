@@ -68,17 +68,13 @@ html, body {
   height: 60px;
 }
 
-   
-@keyframes ai-button {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+#ai-splash { 
+  background: linear-gradient(-45deg, #ffb1b9, #ffa489, #fcd672, #80c7bc, #73c3d5, #a7a4df);
+  background-size: 800% 800%;
+  animation: ai-button 5s ease infinite;
+  height: 100vh;
+  height: 230px;
 }
 
 
@@ -98,6 +94,18 @@ html, body {
 
    
 @keyframes ai-summary {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes ai-button {
   0% {
     background-position: 0% 50%;
   }
