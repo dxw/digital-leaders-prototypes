@@ -1,18 +1,85 @@
 {% extends "layouts/plain.html" %}
+{% set pageName="Payments prototypes" %}
 
-{% block pageTitle %}
-  GOV.UK One Login
-{% endblock %}
+{% block content %}
 
-{% block banner %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <ul class="account-navigation__list">
-        <li class="account-navigation__list-item "><a class="account-navigation__link" href="#">Your services</a></li>
-        <li class="account-navigation__list-item account-navigation__list-item--active"><a class="account-navigation__link" href="#">History</a></li>
-        <li class="account-navigation__list-item "><a class="account-navigation__link" href="#">Settings</a></li>
-        <li class="account-navigation__list-item "><a class="account-navigation__link" href="#">Sign out</a></li>
-      </ul>
+
+            <p class="govuk-body">You applied for subsidised childcare reusing information from your registering your child's birth.</p>
+
+            <!-- informaton shared with Arnford District Council 👇 -->
+            <div class="govuk-summary-card">
+              <div class="govuk-summary-card__title-wrapper" style="background-color: transparent;">
+                <h2 class="govuk-summary-card__title" style="margin-bottom: 0px;">
+                    <strong class="govuk-tag" style="background: #FFA491;">
+                         Information shared
+                    </strong>
+                </h2>
+              </div>
+              <div class="govuk-summary-card__content">
+                <p class="">Arnsford Distriction Council gave acces to Childcare Funding Agency:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>Child's name</li>
+                  <li>Child's date of birth</li>
+                  <li>Parents names</li>
+                  <li>Parents address</li>
+                  <li>Email addresses</li>
+                  <li>Phone numberes</li>
+                </ul>
+              </div>
+              <div class="govuk-summary-card__title-wrapper" style="border-top: 2px solid #243746; background: #FFA491;
+">
+                <h2 class="govuk-summary-card__title">
+                  <ul class="govuk-list govuk-!-font-size-16" style="margin-bottom: 0px;">
+                    <li>
+                      From: <span class="govuk-!-font-weight-bold" href="#">Arnsford District Council</span>
+                    </li>
+                    <li>
+                      To: <span class="govuk-!-font-weight-bold" href="#">Childcare Funding Agency</span>
+                    </li>
+                    <li>
+                      Date: <span class="govuk-!-font-weight-bold" href="#">11:27 on 4 August 2026</span></a>
+                    </li>
+                  </ul>
+                </h2>
+              </div>
+            </div>
+
+            <h2 class="govuk-heading-m">
+              Delete your information
+            </h2>
+
+            <p class="govuk-body">At any time you can request Childcare Funding Agency to delete information from your application for free school transport.</p>
+
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true" style="background: #fff; color: #243746;">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-warning-text__assistive">Warning</span>
+                Deleting information will cancel your application for this service
+              </strong>
+            </div>
+
+            <button class="govuk-button" data-module="govuk-button">
+              Request this information be deleted
+            </button>
+
+            <h2 class="govuk-heading-m">Contact the service</h2>
+
+            <p class="govuk-body">If you have any questions about your application, contact them using the details below.</p>
+
+            <p class="govuk-body">Email: <a href="#">applications@cfa.gov.uk</a></p>
+
+            <p class="govuk-body">
+              Childcare Funding Agency<br>
+              Cannards Grave Road<br>
+              Cladmouth<br>
+              CM4 5BT<br>
+              Phone: 01749 341479
+            </p>
+
     </div>
   </div>
+
+
 {% endblock %}
