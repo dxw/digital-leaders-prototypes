@@ -5,8 +5,27 @@
 
 // Add extra styles here
 
-#main div { 
-  display: none; 
+.hide {
+  display: none;
+}
+
+#show5seconds {
+  animation: cssAnimation 0s 5s forwards;
+  display: none;
+}
+
+#show10seconds {
+  animation: cssAnimation 0s 10s forwards;
+  display: none;
+}
+
+#show15seconds {
+  animation: cssAnimation 0s 15s forwards;
+  display: none;
+}
+
+@keyframes cssAnimation {
+  to   { display: block; }
 }
 
 html, body {
@@ -141,7 +160,59 @@ html, body {
   border-left: 2px solid #243746;
   border-right: 2px solid #243746;
   border-bottom: 2px solid #243746;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+#account-top-left {
+  text-align: left; 
+  padding: 20px 20px 20px 20px; 
+  background-color: #ffffff; 
+  border-top: 2px solid #323232;
+  border-left: 2px solid #323232;
+  border-right: 0px solid #323232;
+  border-bottom: 2px solid #323232;
+  margin-bottom: 0px;
+}
+
+#account-top-left strong {
+  background: #eee;
+}
+
+#account-top-right {
+  text-align: left; 
+  padding: 20px 20px 20px 20px; 
+  background-color: #ffffff; 
+  border-top: 2px solid #323232;
+  border-left: 0px solid #323232;
+  border-right: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  margin-bottom: 0px;
+}
+
+#account-middle {
+  text-align: left; 
+  padding: 20px 20px 20px 20px; 
+  background-color: #ffffff; 
+  border-top: 0px solid #323232;
+  border-left: 2px solid #323232;
+  border-right: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  margin-bottom: 0px;
+}
+
+#account-bottom {
+  text-align: left; 
+  padding: 20px 20px 20px 20px; 
+  background-color: #ffffff; 
+  border-top: 0px solid #323232;
+  border-left: 2px solid #323232;
+  border-right: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  margin-bottom: 0px;
+}
+
+.card-container {
+  margin-bottom: 20px;
 }
 
 #report-card h2 { 
@@ -670,74 +741,4 @@ input[type='radio']:after {
     margin: auto 3px;
     height: 2px;
     box-shadow: none;
-}
-
-.hods-timeline {
-  overflow: hidden;
-  position: relative;
-
-  &__item {
-    @include govuk-responsive-padding(2, "bottom");
-    padding-left: 22px;
-    position: relative;
-
-    &:before { /* styling for lines in margin */
-      background-color: govuk-colour("blue");
-      content: "";
-      padding-top: 0.3em;
-      @include govuk-responsive-padding(3, "right");
-      left: 0;
-      position: absolute;
-      margin-top: 0.55em;
-      z-index: 1;
-    }
-  }
-
-  &:before { /* styling for lines in margin */
-    background-color: govuk-colour("blue");
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    margin-top: 0.55em;
-    padding-left: 0.3em;
-    z-index: 1;
-  }
-
-  &__title {
-    @include govuk-font(19, 'bold');
-    display: inline;
-  }
-
-  &__by {
-    @include govuk-font(16);
-    color: govuk-colour('dark-grey');
-    display: inline;
-  }
-
-  &__date {
-    @include govuk-font(16);
-    color: govuk-colour('dark-grey');
-    @include govuk-responsive-margin(0, "top");
-  }
-
-  &__description {
-    @include govuk-font(16);
-    @include govuk-responsive-margin(5, "top");
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-}
-
-.grid-item {
-  text-align: center;
-}
-
-#writing-image {
-  width: 100%; 
-  border: 2px solid #b1b4b6; 
-  margin-bottom: 25px;
 }

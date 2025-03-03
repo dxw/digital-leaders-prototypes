@@ -1,4 +1,4 @@
-{% extends "layouts/english-credential.html" %}
+{% extends "layouts/api-feed.html" %}
 {% set pageName="Payments prototypes" %}
 
 {% block content %}
@@ -6,24 +6,7 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-          <h1 class="govuk-heading-l">Raw</h1>
-
-          <div id="main"><a href="" class="show_chain">Show</a>
-               <div>item 1</div>
-               <div>item 2</div>
-               <div>item 3</div>
-               <div>item 4</div>
-          </div>
-
     </div>
   </div>
-
-  <script type="text/javascript">
-          (function hidenext(jq){
-              jq.eq(0).fadeOut("fast", function(){
-                  (jq=jq.slice(1)).length && hidenext(jq);
-              });
-          })($('div#bodyContent a'))       
-  </script>
 
 {% endblock %}
