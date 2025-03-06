@@ -219,10 +219,6 @@ html, body {
   margin-bottom: 15px;
 }
 
-.card-container {
-  margin-bottom: 20px;
-}
-
 #report-card h2 { 
   margin-bottom: 10px; 
 }
@@ -266,6 +262,43 @@ html, body {
 #complexity-summary::before {
   color: #0b0c0c;
 }
+
+#api-card-top {
+  width: 50%; 
+  border: 2px solid white; 
+  padding: 20px; 
+  background: white;
+}
+
+#api-card-top p {
+  color: #323232;
+  margin-bottom: 0px;
+}
+
+#api-card-top span {
+  font-weight: 700;
+}
+
+#api-card-bottom {
+  width: 50%; 
+  border-top: 0px solid white; 
+  border-bottom: 2px solid white; 
+  border-left: 2px solid white; 
+  border-right: 2px solid white;
+  padding: 20px; 
+  background: transparent; 
+  margin-bottom: 20px;
+}
+
+#api-card-bottom p {
+  color: white;
+  margin-bottom: 0px;
+}
+
+#api-card-bottom a {
+  color: inherit;
+}
+
 
 // GOV.UK re-styled component
 

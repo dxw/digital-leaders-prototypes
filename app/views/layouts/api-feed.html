@@ -196,53 +196,118 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
     </div>
   </header>
   <header class="govuk-header " role="banner" data-module="govuk-header" style="background-color: #323232; border-bottom: 0px solid white;">
-    <div id="api-feed" class="govuk-header__container govuk-width-container" style="border-bottom: 10px solid transparent; height: 1000px;">
-    	  <h1 class="govuk-heading-l" style="color: #fff;">Births registered<span style="float: right;"><a href="#" style="color: inherit; font-weight: 400; font-size: 24px;">API docs</a></span></h1>
+    <div id="api-feed" class="govuk-header__container govuk-width-container" style="border-bottom: 10px solid transparent; height: 1400px;">
+     <br>
+            <h1 class="govuk-heading-l" style="color: #80C7D6;">Births registered<span style="float: right;"><a href="#" style="color: inherit; font-weight: 400; font-size: 24px;">API docs</a></span></h1>
 
-       <div class="card-container">
-            <div style="width: 50%; border: 2px solid #fff; padding: 20px; background: #fff;">
-               <p style="color:#323232; margin-bottom: 0px;">
-                    <span style="font-weight: 700;">Finley Kanaa</span><br>
+          <!-- purple - card four -->
+          <div id="card-four" class="card-container">
+            <div id="api-card-top" style="border-color: #a7a4df; background-color: #a7a4df;">
+               <p>
+                    <span>Card four</span><br>
                     11:27 on 4 August 2025<br>
                     Arnford Town Hall
                </p>
             </div>
-            <div style="width: 50%; border: 2px solid #fff; padding: 20px; background: #323232;">
-               <p style="color: #fff; margin-bottom: 0px;">
-                    <a href="#" style="color: inherit;">View all details</a>
+            <div id="api-card-bottom" style="border-color: #a7a4df;">
+               <p style="color: #a7a4df;">
+                    <a href="#">View all details</a>
                </p>
             </div>
-       </div>
+          </div>
 
-       <div class="card-container">
-            <div style="width: 50%; border: 2px solid #fff; padding: 20px; background: #fff;">
-               <p style="color:#323232; margin-bottom: 0px;">
-                    <span style="font-weight: 700;">Laura Arkidi</span><br>
+          <!-- orange - card three -->
+          <div id="card-three" class="card-container">
+            <div id="api-card-top" style="border-color: #ffb1b9; background-color: #ffb1b9;">
+               <p>
+                    <span>Card three</span><br>
                     11:27 on 4 August 2025<br>
                     Arnford Town Hall
                </p>
             </div>
-            <div style="width: 50%; border: 2px solid #fff; padding: 20px; background: #323232;">
-               <p style="color: #fff; margin-bottom: 0px;">
-                    <a href="#" style="color: inherit;">View all details</a>
+            <div id="api-card-bottom" style="border-color: #ffb1b9;">
+               <p style="color: #ffb1b9;">
+                    <a href="#">View all details</a>
                </p>
             </div>
-       </div>
+          </div>
 
-       <div class="card-container">
-            <div style="width: 50%; border: 2px solid #fff; padding: 20px; background: #fff;">
-               <p style="color:#323232; margin-bottom: 0px;">
-                    <span style="font-weight: 700;">Darrel Ainsworth</span><br>
+          <!-- blue - card two -->
+          <div id="card-two" class="card-container">
+            <div id="api-card-top" style="border-color: #73c3d5; background-color: #73c3d5;">
+               <p>
+                    <span>Card two</span><br>
                     11:27 on 4 August 2025<br>
                     Arnford Town Hall
                </p>
             </div>
-            <div style="width: 50%; border: 2px solid #fff; padding: 20px; background: #323232;">
-               <p style="color: #fff; margin-bottom: 0px;">
-                    <a href="#" style="color: inherit;">View all details</a>
+            <div id="api-card-bottom" style="border-color: #73c3d5;">
+               <p style="color: #73c3d5;">
+                    <a href="#">View all details</a>
                </p>
             </div>
-       </div>
+          </div>
+
+          <!-- yellow - card one -->
+          <div id="card-one" class="card-container">
+            <div id="api-card-top" style="border-color: #fcd672; background-color: #fcd672;">
+               <p>
+                    <span>Card one</span><br>
+                    11:27 on 4 August 2025<br>
+                    Arnford Town Hall
+               </p>
+            </div>
+            <div id="api-card-bottom" style="border-color: #fcd672;">
+               <p style="color: #fcd672;">
+                    <a href="#">View all details</a>
+               </p>
+            </div>
+          </div>
+
+          <!-- display card four -->
+          <script>
+                  document.getElementById("card-four").style.display = "none";
+
+                  function showStuff() {
+                      document.getElementById("card-four").style.display = "inline";
+                  }
+
+                  function myFunction() {
+                      window.location = "project.html"
+                  }
+
+                  setTimeout(showStuff, 8000);
+          </script>
+
+          <!-- display card three -->
+          <script>
+             document.getElementById("card-three").style.display = "none";
+
+             function showStuff() {
+                 document.getElementById("card-three").style.display = "inline";
+             }
+
+             function myFunction() {
+                 window.location = "project.html"
+             }
+
+             setTimeout(showStuff, 6000);
+          </script>
+
+          <!-- display card two -->
+          <script>
+             document.getElementById("card-two").style.display = "none";
+
+             function showStuff() {
+                 document.getElementById("card-two").style.display = "inline";
+             }
+
+             function myFunction() {
+                 window.location = "project.html"
+             }
+
+             setTimeout(showStuff, 3000);
+          </script>
 
     </div>
   </header>
