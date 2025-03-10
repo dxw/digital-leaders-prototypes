@@ -201,12 +201,76 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
             <h1 class="govuk-heading-l" style="color: #80C7D6;">Births registered<span style="float: right;"><a href="#" style="color: inherit; font-weight: 400; font-size: 24px;">API docs</a></span></h1>
 
           <!-- purple - card four -->
+          <div id="card-eight" class="card-container">
+            <div id="api-card-top" style="border-color: #a7a4df; background-color: #a7a4df;">
+               <p>
+                    <span>Dayne Vandervort</span><br>
+                    14:58 on 4 August 2025<br>
+                    Arnsford Town Hall
+               </p>
+            </div>
+            <div id="api-card-bottom" style="border-color: #a7a4df;">
+               <p style="color: #a7a4df;">
+                    <a href="#">View all details</a>
+               </p>
+            </div>
+          </div>
+
+          <!-- orange - card three -->
+          <div id="card-seven" class="card-container">
+            <div id="api-card-top" style="border-color: #ffb1b9; background-color: #ffb1b9;">
+               <p>
+                    <span>Craig Renner</span><br>
+                    14:34 on 4 August 2025<br>
+                    Highcliff Registration Office
+               </p>
+            </div>
+            <div id="api-card-bottom" style="border-color: #ffb1b9;">
+               <p style="color: #ffb1b9;">
+                    <a href="#">View all details</a>
+               </p>
+            </div>
+          </div>
+
+          <!-- blue - card two -->
+          <div id="card-six" class="card-container">
+            <div id="api-card-top" style="border-color: #73c3d5; background-color: #73c3d5;">
+               <p>
+                    <span>Wilford Veum</span><br>
+                    14:12 on 4 August 2025<br>
+                    Arnsford Town Hall
+               </p>
+            </div>
+            <div id="api-card-bottom" style="border-color: #73c3d5;">
+               <p style="color: #73c3d5;">
+                    <a href="#">View all details</a>
+               </p>
+            </div>
+          </div>
+
+          <!-- yellow - card five -->
+          <div id="card-five" class="card-container">
+            <div id="api-card-top" style="border-color: #fcd672; background-color: #fcd672;">
+               <p>
+                    <span>Monserrat Harvey</span><br>
+                    12:41 on 4 August 2025<br>
+                    Arnsford Town Hall
+               </p>
+            </div>
+            <div id="api-card-bottom" style="border-color: #fcd672;">
+               <p style="color: #fcd672;">
+                    <a href="#">View all details</a>
+               </p>
+            </div>
+          </div>
+
+          <!-- purple - card four -->
           <div id="card-four" class="card-container">
             <div id="api-card-top" style="border-color: #a7a4df; background-color: #a7a4df;">
                <p>
-                    <span>Card four</span><br>
-                    11:27 on 4 August 2025<br>
-                    Arnford Town Hall
+                    <span>Katrina Yundt</span><br>
+                    12:21 on 4 August 2025<br>
+                    Highcliff Registration Office
                </p>
             </div>
             <div id="api-card-bottom" style="border-color: #a7a4df;">
@@ -220,9 +284,9 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
           <div id="card-three" class="card-container">
             <div id="api-card-top" style="border-color: #ffb1b9; background-color: #ffb1b9;">
                <p>
-                    <span>Card three</span><br>
-                    11:27 on 4 August 2025<br>
-                    Arnford Town Hall
+                    <span>Brigitte Feeney</span><br>
+                    11:59 on 4 August 2025<br>
+                    Arnsford Town Hall
                </p>
             </div>
             <div id="api-card-bottom" style="border-color: #ffb1b9;">
@@ -236,9 +300,9 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
           <div id="card-two" class="card-container">
             <div id="api-card-top" style="border-color: #73c3d5; background-color: #73c3d5;">
                <p>
-                    <span>Card two</span><br>
-                    11:27 on 4 August 2025<br>
-                    Arnford Town Hall
+                    <span>Joelle Heller</span><br>
+                    11:41 on 4 August 2025<br>
+                    Highcliff Registration Office
                </p>
             </div>
             <div id="api-card-bottom" style="border-color: #73c3d5;">
@@ -252,9 +316,9 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
           <div id="card-one" class="card-container">
             <div id="api-card-top" style="border-color: #fcd672; background-color: #fcd672;">
                <p>
-                    <span>Card one</span><br>
+                    <span>Isabella Martin</span><br>
                     11:27 on 4 August 2025<br>
-                    Arnford Town Hall
+                    Arnsford Town Hall
                </p>
             </div>
             <div id="api-card-bottom" style="border-color: #fcd672;">
@@ -263,6 +327,73 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
                </p>
             </div>
           </div>
+
+          <!-- restart animation after 10 seconds -->
+          <script>
+               setTimeout(function(){
+                  window.location.reload(1);
+               }, 25000);
+          </script>
+
+          <!-- display card eight -->
+          <script>
+                  document.getElementById("card-eight").style.display = "none";
+
+                  function showStuff() {
+                      document.getElementById("card-eight").style.display = "inline";
+                  }
+
+                  function myFunction() {
+                      window.location = "project.html"
+                  }
+
+                  setTimeout(showStuff, 21000);
+          </script>
+
+          <!-- display card seven -->
+          <script>
+                  document.getElementById("card-seven").style.display = "none";
+
+                  function showStuff() {
+                      document.getElementById("card-seven").style.display = "inline";
+                  }
+
+                  function myFunction() {
+                      window.location = "project.html"
+                  }
+
+                  setTimeout(showStuff, 18000);
+          </script>
+
+          <!-- display card six -->
+          <script>
+                  document.getElementById("card-six").style.display = "none";
+
+                  function showStuff() {
+                      document.getElementById("card-six").style.display = "inline";
+                  }
+
+                  function myFunction() {
+                      window.location = "project.html"
+                  }
+
+                  setTimeout(showStuff, 15000);
+          </script>
+
+          <!-- display card five -->
+          <script>
+                  document.getElementById("card-five").style.display = "none";
+
+                  function showStuff() {
+                      document.getElementById("card-five").style.display = "inline";
+                  }
+
+                  function myFunction() {
+                      window.location = "project.html"
+                  }
+
+                  setTimeout(showStuff, 12000);
+          </script>
 
           <!-- display card four -->
           <script>
@@ -276,7 +407,7 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
                       window.location = "project.html"
                   }
 
-                  setTimeout(showStuff, 8000);
+                  setTimeout(showStuff, 9000);
           </script>
 
           <!-- display card three -->

@@ -28,6 +28,19 @@
   to   { display: block; }
 }
 
+.card-container {
+    -webkit-animation: smooth 2s ease-in;
+    -moz-animation: smooth 2s ease-in;
+    -o-animation: smooth 2s ease-in;
+    -ms-animation: smooth 2s ease-in;
+    animation: smooth 2s ease-in;
+}
+
+@-webkit-keyframes smooth {
+    1000% { opacity: 1;}
+    0% { opacity: 0;}
+}
+
 html, body {
   scroll-padding-top: 6rem;
 }
@@ -43,6 +56,12 @@ html, body {
 }
 
 #wallet-card {
+  background: linear-gradient(225deg,#fcd672,#ff8d6b,#ffa489,#ff5c35,);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+}
+
+#certificate-logo {
   background: linear-gradient(225deg,#fcd672,#ff8d6b,#ffa489,#ff5c35,);
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
@@ -77,11 +96,20 @@ html, body {
   height: 230px;
 }
 
+#ai-search-result-text {
+  font-size: 24px;
+}
 
-#ai-highlighted {
-  text-decoration: underline #7473c0; 
-  text-underline-offset: 0.2rem;
-  text-decoration-thickness: 3px;
+#ai-search-result-text {
+    color: #fff; 
+}
+
+#ai-search-result-text a {
+    background-image: linear-gradient(-45deg, #ffb1b9, #ffa489, #fcd672, #80c7bc, #73c3d5, #a7a4df);
+    color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    text-decoration: underline white;
 }
 
 #ai-summary { 
