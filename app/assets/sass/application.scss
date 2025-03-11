@@ -109,7 +109,6 @@ html, body {
     color: transparent;
     background-clip: text;
     font-weight: 700;
-    text-decoration: underline white;
 }
 
 #ai-summary { 
@@ -162,9 +161,27 @@ html, body {
 
 #frozen-certificate {
   margin-top: 10px;
-  background: rgb(23,33,44);
-  background: linear-gradient(48deg, rgba(23,33,44,1) 0%, rgba(36,55,70,1) 35%, rgba(0,72,118,1) 87%);
+  background: linear-gradient(-45deg, #17212c, #243746, #004876, #009abf, #73c3d5);
+  background-size: 400% 400%;
+  animation: frozen-certificate 5s ease infinite;
+  height: 100vh;
+  height: 145px;
   padding: 20px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #243746;
+}
+
+@keyframes frozen-certificate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #list-index li {
