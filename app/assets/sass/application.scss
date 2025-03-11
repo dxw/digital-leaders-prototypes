@@ -160,6 +160,13 @@ html, body {
     }
   }
 
+#frozen-certificate {
+  margin-top: 10px;
+  background: rgb(23,33,44);
+  background: linear-gradient(48deg, rgba(23,33,44,1) 0%, rgba(36,55,70,1) 35%, rgba(0,72,118,1) 87%);
+  padding: 20px;
+}
+
 #list-index li {
   margin-bottom: 15px;
 }
