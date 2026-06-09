@@ -1,12 +1,14 @@
 {
   "scripts": {
-    "dev": "govuk-prototype-kit dev",
-    "serve": "govuk-prototype-kit serve",
-    "start": "govuk-prototype-kit start"
+    "dev": "node --watch server.js",
+    "start": "node server.js"
   },
   "dependencies": {
-    "@govuk-prototype-kit/common-templates": "2.0.1",
+    "express": "^5.1.0",
     "govuk-frontend": "5.8.0",
-    "govuk-prototype-kit": "13.16.2"
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "sass": "^1.69.7"
   }
 }
