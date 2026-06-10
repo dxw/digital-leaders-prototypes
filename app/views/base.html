@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="govuk-template" lang="{{ htmlLang or 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <title>{% block pageTitle %}{{ serviceName or "Digital leaders" }}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% block headIcons %}{% endblock %}
+
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+
+  {% block head %}{% endblock %}
+</head>
+<body class="govuk-template__body" style="min-height: 100vh; background: #ffffff; font-family: Arial, sans-serif;">
+  {% block bodyStart %}{% endblock %}
+
+  {% block skipLink %}{% endblock %}
+
+  {% block header %}{% endblock %}
+
+  {% block beforeContent %}{% endblock %}
+
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-width-container">
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+
+  {% block footer %}{% endblock %}
+
+  {% block scripts %}
+    <script src="/assets/javascripts/application.js"></script>
+  {% endblock %}
+
+  {% block pageScripts %}{% endblock %}
+  {% block bodyEnd %}{% endblock %}
+</body>
+</html>
